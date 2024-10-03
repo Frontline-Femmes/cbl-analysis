@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBL Bans Analysis Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        h1 { color: #2c3e50; }
+        h2 { color: #34495e; border-bottom: 1px solid #ecf0f1; padding-bottom: 10px; }
+        img { max-width: 100%; height: auto; margin: 20px 0; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .analysis { margin-bottom: 40px; }
+        .explanation, .observations { background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-bottom: 15px; }
+        .observations { background-color: #e8f4f8; }
+        .metadata { font-style: italic; margin-bottom: 20px; }
+        .toc { background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 30px; }
+        .toc ul { list-style-type: none; padding-left: 0; }
+        .toc ul ul { padding-left: 20px; }
+        .toc a { text-decoration: none; color: #3498db; }
+        .toc a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Community Ban List (CBL) Analysis Report</h1>
+    <div class="metadata">
+        <p>Analysis Date: 2024-10-03</p>
+        <p>This report provides an in-depth analysis of ban data from the Community Ban List (CBL). It includes various visualizations and insights into ban patterns, reasons, and trends across different gaming communities.</p>
+        <p>Analysis credit: @WispWitch</p>
+        <p>Note: Large Language Models (LLMs) were used in the creation of this document.</p>
+    </div>
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            
+                <li><a href="#analysis-1">Correlation Between Ban Reasons</a></li>
+            
+                <li><a href="#analysis-2">Temporal Trends in Ban Reasons</a></li>
+            
+                <li><a href="#analysis-3">Unknown Reasons by Server and Month</a></li>
+            
+                <li><a href="#analysis-4">Organizational Differences in Ban Enforcement</a></li>
+            
+                <li><a href="#analysis-5">Ban Durations and Severity Correlation</a></li>
+            
+                <li><a href="#analysis-6">Seasonal and Weekly Patterns</a></li>
+            
+                <li><a href="#analysis-7">Clustering of Ban Reasons</a></li>
+            
+                <li><a href="#analysis-8">Trend Analysis of Emerging Behaviors</a></li>
+            
+                <li><a href="#analysis-9">Analysis of Ban Reason Combinations</a></li>
+            
+                <li><a href="#analysis-10">Hate Speech and Ableism Analysis</a></li>
+            
+        </ul>
+    </div>
+    
+    <div id="analysis-1" class="analysis">
+        <h2>Correlation Between Ban Reasons</h2>
+        <div class="explanation">
+            <p>This heatmap shows the correlation between different ban reasons. Stronger correlations indicate that certain ban reasons often occur together.</p>
+        </div>
+        
+            <img src="correlation_between_ban_reasons.png" alt="Correlation Between Ban Reasons">
+        
+    </div>
+    
+    <div id="analysis-2" class="analysis">
+        <h2>Temporal Trends in Ban Reasons</h2>
+        <div class="explanation">
+            <p>This line chart displays how the frequency of top ban reasons has changed over time, helping identify emerging or declining problematic behaviors.</p>
+        </div>
+        
+            <img src="temporal_trends_in_ban_reasons.png" alt="Temporal Trends in Ban Reasons">
+        
+    </div>
+    
+    <div id="analysis-3" class="analysis">
+        <h2>Unknown Reasons by Server and Month</h2>
+        <div class="explanation">
+            <p>This bubble graph shows the percentage of bans with unknown reasons for the top 20 servers over time. The size of each bubble represents the percentage of unknown bans for that server in a given month.</p>
+        </div>
+        
+            <img src="unknown_reasons_by_server_and_month.png" alt="Unknown Reasons by Server and Month">
+        
+    </div>
+    
+    <div id="analysis-4" class="analysis">
+        <h2>Organizational Differences in Ban Enforcement</h2>
+        <div class="explanation">
+            <p>This heatmap illustrates how different organizations enforce bans, highlighting variations in moderation practices across communities.</p>
+        </div>
+        
+            <img src="organizational_differences_in_ban_enforcement.png" alt="Organizational Differences in Ban Enforcement">
+        
+    </div>
+    
+    <div id="analysis-5" class="analysis">
+        <h2>Ban Durations and Severity Correlation</h2>
+        <div class="explanation">
+            <p>This boxplot shows the distribution of ban durations for different ban reasons, indicating how severity of punishment correlates with specific offenses.</p>
+        </div>
+        
+            <img src="ban_durations_and_severity_correlation.png" alt="Ban Durations and Severity Correlation">
+        
+    </div>
+    
+    <div id="analysis-6" class="analysis">
+        <h2>Seasonal and Weekly Patterns</h2>
+        <div class="explanation">
+            <p>These bar charts display ban frequencies by day of the week and month, revealing temporal patterns in ban occurrences.</p>
+        </div>
+        
+            <img src="seasonal_and_weekly_patterns.png" alt="Seasonal and Weekly Patterns">
+        
+    </div>
+    
+    <div id="analysis-7" class="analysis">
+        <h2>Clustering of Ban Reasons</h2>
+        <div class="explanation">
+            <p>This bar chart shows clusters of ban reasons, potentially revealing underlying patterns or categories of problematic behavior.</p>
+        </div>
+        
+            <img src="clustering_of_ban_reasons.png" alt="Clustering of Ban Reasons">
+        
+    </div>
+    
+    <div id="analysis-8" class="analysis">
+        <h2>Trend Analysis of Emerging Behaviors</h2>
+        <div class="explanation">
+            <p>This stacked bar chart illustrates the emergence and growth of new ban reasons over time, highlighting evolving problematic behaviors.</p>
+        </div>
+        
+            <img src="trend_analysis_of_emerging_behaviors.png" alt="Trend Analysis of Emerging Behaviors">
+        
+    </div>
+    
+    <div id="analysis-9" class="analysis">
+        <h2>Analysis of Ban Reason Combinations</h2>
+        <div class="explanation">
+            <p>This bar chart shows the most common combinations of ban reasons, revealing frequently co-occurring problematic behaviors.</p>
+        </div>
+        
+            <img src="analysis_of_ban_reason_combinations.png" alt="Analysis of Ban Reason Combinations">
+        
+    </div>
+    
+    <div id="analysis-10" class="analysis">
+        <h2>Hate Speech and Ableism Analysis</h2>
+        <div class="explanation">
+            <p>This analysis focuses on trends, server enforcement, and correlations related to hate speech and ableism bans.</p>
+        </div>
+        
+            <div class="observations">
+                <h3>Observations:</h3>
+                <ul>
+                    <li>The overall enforcement rate for hate speech and ableism bans is 28.46% of all bans.</li>
+                    <li>The trend analysis shows how hate speech and ableism bans have changed over time, potentially reflecting broader social trends or changes in moderation policies.</li>
+                    <li>Server enforcement rates highlight which communities are more or less strict in moderating hate speech compared to the overall rate, on a per-capita basis.</li>
+                    <li>Correlations with other ban reasons reveal which behaviors are most associated with hate speech and ableism, potentially helping to identify at-risk players earlier.</li>
+                </ul>
+            </div>
+            <img src="hate_speech_trends.png" alt="Hate Speech and Ableism Trends">
+            <img src="server_enforcement_rates.png" alt="Server Enforcement Rates (Per Capita)">
+            <img src="hate_speech_correlations.png" alt="Correlations with Hate Speech and Ableism">
+        
+    </div>
+    
+</body>
+</html>

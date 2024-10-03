@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (head content remains the same) ... -->
+</head>
+<body>
+    <!-- ... (body content remains mostly the same) ... -->
+    {% for analysis in analyses_results %}
+    <div id="analysis-{{ loop.index }}" class="analysis">
+        <h2>{{ analysis.title }}</h2>
+        <div class="explanation">
+            <p>{{ analysis.explanation }}</p>
+        </div>
+        {% if analysis.title == 'Hate Speech and Ableism Analysis' %}
+            <!-- ... (special handling for this section) ... -->
+            <img src="images/hate_speech_trends.png" alt="Hate Speech and Ableism Trends">
+            <img src="images/server_enforcement_rates.png" alt="Server Enforcement Rates (Per Capita)">
+            <img src="images/hate_speech_correlations.png" alt="Correlations with Hate Speech and Ableism">
+        {% else %}
+            <img src="images/{{ analysis.image }}" alt="{{ analysis.title }}">
+        {% endif %}
+    </div>
+    {% endfor %}
+</body>
+</html>
