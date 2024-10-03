@@ -16,7 +16,7 @@ To set up CBL Analysis, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/cbl-analysis.git
+   git clone https://github.com/Frontline-Femmes/cbl-analysis.git
    ```
 
 2. Navigate to the project directory:
@@ -64,4 +64,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any questions or support, please open an issue on the GitHub repository.
 
-Project Link: https://github.com/your-username/cbl-analysis
+Project Link: https://github.com/Frontline-Femmes/cbl-analysis

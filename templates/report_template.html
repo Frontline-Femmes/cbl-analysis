@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ... (head content remains the same) ... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBL Bans Analysis Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        h1 { color: #2c3e50; }
+        h2 { color: #34495e; border-bottom: 1px solid #ecf0f1; padding-bottom: 10px; }
+        img { max-width: 100%; height: auto; margin: 20px 0; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .analysis { margin-bottom: 40px; }
+        .explanation, .observations { background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-bottom: 15px; }
+        .observations { background-color: #e8f4f8; }
+        .metadata { font-style: italic; margin-bottom: 20px; }
+        .toc { background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 30px; }
+        .toc ul { list-style-type: none; padding-left: 0; }
+        .toc ul ul { padding-left: 20px; }
+        .toc a { text-decoration: none; color: #3498db; }
+        .toc a:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
-    <!-- ... (body content remains mostly the same) ... -->
+    <h1>Community Ban List (CBL) Analysis Report</h1>
+    <div class="metadata">
+        <p>Analysis Date: {{ analysis_date }}</p>
+        <p>This report provides an in-depth analysis of ban data from the Community Ban List (CBL). It includes various visualizations and insights into ban patterns, reasons, and trends across different gaming communities.</p>
+        <p>Analysis credit: @WispWitch</p>
+        <p>Note: Large Language Models (LLMs) were used in the creation of this document.</p>
+    </div>
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            {% for analysis in analyses_results %}
+                <li><a href="#analysis-{{ loop.index }}">{{ analysis.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    
     {% for analysis in analyses_results %}
     <div id="analysis-{{ loop.index }}" class="analysis">
         <h2>{{ analysis.title }}</h2>
@@ -12,7 +44,15 @@
             <p>{{ analysis.explanation }}</p>
         </div>
         {% if analysis.title == 'Hate Speech and Ableism Analysis' %}
-            <!-- ... (special handling for this section) ... -->
+            <div class="observations">
+                <h3>Observations:</h3>
+                <ul>
+                    <li>The overall enforcement rate for hate speech and ableism bans is 28.46% of all bans.</li>
+                    <li>The trend analysis shows how hate speech and ableism bans have changed over time, potentially reflecting broader social trends or changes in moderation policies.</li>
+                    <li>Server enforcement rates highlight which communities are more or less strict in moderating hate speech compared to the overall rate, on a per-capita basis.</li>
+                    <li>Correlations with other ban reasons reveal which behaviors are most associated with hate speech and ableism, potentially helping to identify at-risk players earlier.</li>
+                </ul>
+            </div>
             <img src="images/hate_speech_trends.png" alt="Hate Speech and Ableism Trends">
             <img src="images/server_enforcement_rates.png" alt="Server Enforcement Rates (Per Capita)">
             <img src="images/hate_speech_correlations.png" alt="Correlations with Hate Speech and Ableism">
